@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LT9-9V-bEh">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--History View-->
+        <scene sceneID="0xS-Hn-CXP">
+            <objects>
+                <viewController id="LT9-9V-bEh" customClass="HistoryView" customModule="MVVM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jzb-2W-Z7l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubk-C2-3Fl">
+                                <rect key="frame" x="20" y="243.5" width="335" height="200"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ubk-C2-3Fl" firstAttribute="height" secondItem="jzb-2W-Z7l" secondAttribute="height" multiplier="0.3" id="62u-JD-TGo"/>
+                            <constraint firstItem="FIY-j1-74y" firstAttribute="trailing" secondItem="ubk-C2-3Fl" secondAttribute="trailing" constant="20" id="bQl-Dp-Zeg"/>
+                            <constraint firstItem="ubk-C2-3Fl" firstAttribute="centerX" secondItem="FIY-j1-74y" secondAttribute="centerX" id="dMV-TY-G5V"/>
+                            <constraint firstItem="ubk-C2-3Fl" firstAttribute="leading" secondItem="FIY-j1-74y" secondAttribute="leading" constant="20" id="vAM-hz-Hp5"/>
+                            <constraint firstItem="ubk-C2-3Fl" firstAttribute="centerY" secondItem="FIY-j1-74y" secondAttribute="centerY" id="xRy-eB-rzi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FIY-j1-74y"/>
+                    </view>
+                    <connections>
+                        <outlet property="historyText" destination="ubk-C2-3Fl" id="fOt-Ih-nFd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9wI-Lf-R4Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-264" y="341"/>
+        </scene>
+    </scenes>
+</document>
